@@ -87,5 +87,10 @@ namespace Calculator
         {
             textBox1.Text = "" + this.modelCalculator.Raiz(Convert.ToDouble(textBox1.Text));
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = " " + this.modelCalculator.Clear();
+        }//Clear
     }//fim da classe
 }//fim do projeto

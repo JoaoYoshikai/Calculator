@@ -36,6 +36,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -58,7 +59,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(254, 253);
+            this.button2.Location = new System.Drawing.Point(267, 253);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 29);
             this.button2.TabIndex = 9;
@@ -88,7 +89,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(254, 354);
+            this.button5.Location = new System.Drawing.Point(267, 354);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 33);
             this.button5.TabIndex = 12;
@@ -106,12 +107,23 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(214, 116);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(186, 58);
+            this.button6.TabIndex = 15;
+            this.button6.Text = "Clear";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(600, 458);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -141,6 +153,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
     }
 }
 

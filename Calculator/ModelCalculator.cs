@@ -62,8 +62,16 @@ namespace Calculator
         }//Fim da divisao
 
         public double Raiz(double num)
-        {       
-            return Math.Sqrt(num);      
+        {
+            ConsultarOperacao = Math.Sqrt(num);
+            return Math.Sqrt(num);
         }//Fim da divisao
+    
+        public double Clear()
+        {
+            ConsultarOperacao = 0;
+            return ConsultarOperacao;
+        }//Clear
+    
     }//Fim da classe
 }//Fim do projeto
