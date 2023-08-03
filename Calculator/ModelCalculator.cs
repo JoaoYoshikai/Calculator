@@ -27,10 +27,43 @@ namespace Calculator
         }//Somar
 
         public double Subtracao(double num)
-        {
+        {if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
             return ConsultarOperacao -= num;
         }//Subtração
 
+        public double Divisao(double num)
+        {
+            if (ConsultarOperacao <= 0)
+            {
+               return ConsultarOperacao = num;
+            }
+            return ConsultarOperacao /= num;
+        }//Fim da divisao
 
+        public double Multiplicar(double num)
+        {
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
+            return ConsultarOperacao *= num;
+        }//Fim da divisao
+
+        public double Pot(double num)
+        {
+            if (ConsultarOperacao <= 0)
+            {
+                return ConsultarOperacao = num;
+            }
+            return Math.Pow(ConsultarOperacao, num);
+        }//Fim da divisao
+
+        public double Raiz(double num)
+        {       
+            return Math.Sqrt(num);      
+        }//Fim da divisao
     }//Fim da classe
 }//Fim do projeto

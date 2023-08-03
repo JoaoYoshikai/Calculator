@@ -46,8 +46,17 @@ namespace Calculator
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (Convert.ToDouble(textBox1.Text) > 0)
+            {
+                textBox1.Text = "" + this.modelCalculator.Divisao(Convert.ToDouble(textBox1.Text));
+            }//If
+            else
+            {
+                textBox1.Text = "Insira um valor válido papi";
+            }//Fim do else
 
-        }
+            
+        }//Divisao 
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -63,6 +72,20 @@ namespace Calculator
         {
             textBox1.Text = "" + this.modelCalculator.Subtracao(Convert.ToDouble(textBox1.Text));
         }//Subtração
-    
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "" + this.modelCalculator.Multiplicar(Convert.ToDouble(textBox1.Text));
+        }//Multiplicar
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "" + this.modelCalculator.Pot(Convert.ToDouble(textBox1.Text));
+        }//Potência
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "" + this.modelCalculator.Raiz(Convert.ToDouble(textBox1.Text));
+        }
     }//fim da classe
 }//fim do projeto
